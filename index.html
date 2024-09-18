@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("images/flowers.jpg");
+            font-size: large;
+        }
+        p{color:rgb(5, 23, 42)}
+
+        #italic{font-style: italic;}
+
+        .background-color{background-color: aliceblue;}
+
+        .animation {
+            width: 100px;
+            height: 200px;
+            background-color:blue;
+            position:relative;
+            animation-name: square;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes square {
+            0% {background-color: blue; left:0px; top:0px;}
+            25% {background-color: blueviolet; left:400px; top:0px;}
+            50% {background-color:brown; left:400px; top:400px;}
+            75% {background-color:burlywood; left:0px; top:400px;}
+            100% {background-color:chartreuse; left:0px; top:0px;}
+        }
+
+    </style>
+</head>
+<body style="text-align: center;font-family:serif;">
+    <!-- here is my intro  -->
+
+     <div class="background-color">
+        <br>
+    <h1 id="italic">Cameron's Favorite Thing About School</h1>
+    <h2>Cameron's Favorite Thing About School Is Robotics.</h2>
+        <br>
+    </div>
+
+    <div style="font-weight: 600;">
+    <p>He goes to Robotics from Tuesday through Thursday.</p>
+    <p>This is the <strong><a href="https://www.firstinspires.org/robotics/ftc/game-and-season">
+        robotics challenge</a></strong> for the 24-25 school year.</p>
+<!-- here is a picture -->
+ <p>Here is the logo for the robotics company:</p>
+<img src="images\download.png" width="200"alt="ftc logo"/>
+    </div>
+
+    <div class="animation"></div>
+
+<!-- here is the embeding from youtube for the ftc challenge: -->
+ <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zyUkIumb9Rw?si=V7W65Ek57Psj8nmM" 
+    title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <!-- The <br> tag is a new one that is a line break: -->
+<p style="font-size: x-large;">What the Robotics Team <br>just ordered:</p>
+<ul style="text-align: left; font-size: x-large;">
+    <li style="color:rgb(5, 23, 42)">Wheels</li>
+    <li style="color:rgb(5, 23, 42)">Servos</li>
+    <li style="color:rgb(5, 23, 42)">Servo Encoder</li>
+
+
+</ul>
+
+</body>
+</html>
